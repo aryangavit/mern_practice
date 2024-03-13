@@ -1,10 +1,10 @@
-//query selector
-//getting the first <p> tag element
-const para = document.querySelector('p');
+//query selector All
 
-//getting the first element with class="error"
-const err = document.querySelector('.error');
+//we want not just the first query but a reference of all p tags
+//storing it in a collection
+const paras = document.querySelectorAll('p');
+console.log(paras[3]);
 
-//getting div with class= "error"
-const divErr = document.querySelector('div.error');
-console.log(para,err,divErr);
+paras.forEach(para => {
+    console.log(para);
+});
